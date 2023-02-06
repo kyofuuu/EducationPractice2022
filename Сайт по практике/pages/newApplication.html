@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Новая заявка</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header grey">
+            <div class="header__container">
+                <div class="header__logo">
+                    <div class="header__icon">
+                        <img src="../img/icon.png" alt="" class="header__img">
+                    </div>
+                    
+
+                    
+                </div>
+                <div class="header__userBlock">
+                    <div class="user__data" id="userData"></div>
+                    <a href="account.html" class="btnLogout">Назад</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container main__appl">
+                <div class="application-block">
+                    <div class="auth-img"><img src="/img/0c14af7b7c20dcea.png" alt=""></div>
+                    <div class="auth-block__inner">
+                        <div class="auth-block__title">Новая заявка</div>
+                    <!-- Выбор проблемы -->
+                    <div class="compon__text">Выберите причину</div>
+                    <div class="dropDown__menu" id="dropDown__menuPr">
+                        <button class="btnDropdown" id="btnProblem">
+                            <div class="buttonDropdown__text" id="buttonDropdownPr__text">Проблемы с преддомовой сетью</div>
+                            <div class="arrow__icon">
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.17796 3.47537L1.21327 0.171467C0.899432 -0.0900667 0.433 -0.047664 0.171467 0.266176C-0.0900668 0.580016 -0.0476638 1.04645 0.266176 1.30798L4.70441 5.00651C4.97873 5.23511 5.37719 5.23511 5.65151 5.00651L10.0897 1.30798C10.4036 1.04645 10.446 0.580016 10.1845 0.266176C9.92292 -0.047664 9.45649 -0.0900667 9.14265 0.171467L5.17796 3.47537Z" fill="#FC3711"/>
+                                </svg>   
+                            </div>
+                        </button>
+    
+                        <ul class="list__dropdown" id="list__dropdown">
+                            <li><button class="list__item list__problems" id="problem__1">Замена оборудования</button></li>
+                            <li><button class="list__item list__problems" id="problem__2">Проблемы с телевидением</button></li>
+                            <li><button class="list__item list__problems" id="problem__3">Проблемы с интернетом</button></li>
+                            <li><button class="list__item list__problems" id="problem__4">Проблемы с преддомовой сетью</button></li>
+                            <li><button class="list__item list__problems" id="problem__5">Другая причина</button></li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <!-- Выбор района -->
+                    <div class="compon__text">Выберите район</div>
+                    <div class="dropDown__menu" id="dropDownDist__menu">
+                        <button class="btnDropdown" id="btnDistricts">
+                            <div class="buttonDropdown__text" id="buttonDropdown__textDist">Адмиралтейский район</div>
+                            <div class="arrow__icon">
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.17796 3.47537L1.21327 0.171467C0.899432 -0.0900667 0.433 -0.047664 0.171467 0.266176C-0.0900668 0.580016 -0.0476638 1.04645 0.266176 1.30798L4.70441 5.00651C4.97873 5.23511 5.37719 5.23511 5.65151 5.00651L10.0897 1.30798C10.4036 1.04645 10.446 0.580016 10.1845 0.266176C9.92292 -0.047664 9.45649 -0.0900667 9.14265 0.171467L5.17796 3.47537Z" fill="#FC3711"/>
+                                </svg>   
+                            </div>
+                        </button>
+    
+                        <ul class="list__dropdown" id="list__dropdown">
+                            <li><button class="list__item list__districts" id="district__1">Амиралтейский район</button></li>
+                            <li><button class="list__item list__districts" id="district__2">Калининский район</button></li>
+                            <li><button class="list__item list__districts" id="district__3">Красногвардейский район</button></li>
+                            <li><button class="list__item list__districts" id="district__4">Курортный район</button></li>
+                            <li><button class="list__item list__districts" id="district__5">Петроградский район</button></li>
+                            <li><button class="list__item list__districts" id="district__6">Пушкинский район</button></li>
+                            <li><button class="list__item list__districts" id="district__7">Василеостровский район</button></li>
+                            <li><button class="list__item list__districts" id="district__8">Кировский район</button></li>
+                            <li><button class="list__item list__districts" id="district__9">Красносельский район</button></li>
+                            <li><button class="list__item list__districts" id="district__10">Московский район</button></li>
+                            <li><button class="list__item list__districts" id="district__11">Петродворцовый район</button></li>
+                            <li><button class="list__item list__districts" id="district__12">Фрунзенский район</button></li>
+                            <li><button class="list__item list__districts" id="district__13">Выборгский район</button></li>
+                            <li><button class="list__item list__districts" id="district__14">Колпинский район</button></li>
+                            <li><button class="list__item list__districts" id="district__15">Кронштадтский район</button></li>
+                            <li><button class="list__item list__districts" id="district__16">Невский район</button></li>
+                            <li><button class="list__item list__districts" id="district__17">Приморский район</button></li>
+                            <li><button class="list__item list__districts" id="district__18">Центральный район</button></li>
+                        </ul>
+                    </div>
+                    <!-- ввод телефона -->
+                    <div class="compon__text">Введите номер телефона</div>
+                    <input type="text" class="input__area tel" id="phone" placeholder="Ваш номер телефона"/>
+                    <!-- ввод адреса -->
+                    <div class="compon__text">Введите адрес</div>
+                    <input type="text" class="input__area" id="address" placeholder="Ваш адрес"/>
+                    <!-- ввод описания -->
+                    <div class="compon__text">Напишите описание проблемы</div>
+                    <textarea type="text" class="textarea" id="description" placeholder="Описаине проблемы"></textarea>
+
+                  
+                    <button class="btn__login" id="btnNewApp">Оставить заявку</button>
+       
+                    </div>
+                                 
+                </div>
+
+            </div>
+        </main>        
+
+        
+    </div>
+
+    <script type="module" src="../script.js"></script>
+</body>
+</html>

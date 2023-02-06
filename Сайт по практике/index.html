@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+  
+    
+    <title>Авторизация</title>
+</head>
+<body class="auth">
+    <div class="wrapper">
+        
+
+        <main class="main">
+            <div class="main__container">
+                <div class="auth-block">
+                    <div class="auth-img"><img src="/img/0c14af7b7c20dcea.png" alt=""></div>
+                    <div class="auth-block__inner">
+                        <div class="auth-block__title">Авторизация</div>
+                        <input type="text" class="input__area" placeholder="Логин" id="login"/>
+                        <input type="text" class="input__area" placeholder="Пароль" id="password"/>
+                        <button class="btn__login" id="btn__autharization">Войти</button>
+                        <div class="reg-block">
+                        <div class="reg__text">Нет аккаунта?</div>
+                        <a href="pages/registration.html" class="btn__reg">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- <script  type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        
+        // import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+        // // TODO: Add SDKs for Firebase products that you want to use
+        // // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // // Your web app's Firebase configuration
+        // // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAlPW9hf3gaY-pVb6VcIJmX5ivVWN6gMEI",
+            authDomain: "bonchtelecom.firebaseapp.com",
+            databaseURL: "https://bonchtelecom-default-rtdb.firebaseio.com",
+            projectId: "bonchtelecom",
+            storageBucket: "bonchtelecom.appspot.com",
+            messagingSenderId: "405260156425",
+            appId: "1:405260156425:web:acb58832ef247da9cec2d8",
+            measurementId: "G-LS2YWEYWQP"
+        };
+
+        
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, ref, get, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+        const database = getDatabase();
+
+
+
+
+
+
+        class User {
+            constructor(userID, name, surname, login, password, roleID) {
+                this.userID = userID;
+                this.name = name;
+                this.surname = surname;
+                this.login = login;
+                this.password = password;
+                this.roleID = roleID;
+            }
+        }
+
+        let users = [];
+        let user = new User(2, "Игорь", "Греков", "grekov", "grekov", 2);
+        users.push(user);
+
+        function insertData() {
+            set(ref(database, "Users/"+ user.userID), {
+                userID: user.userID,
+                name: user.name,
+                surname: user.surname,
+                login: user.login,
+                password: user.password,
+                roleID: user.roleID
+            }).then(() => {
+                alert("Успешно");
+            }).catch((error) => {
+                alert("Ошибка");
+            });
+        }
+        // insertData();
+
+        function selectData() {
+            const dbref = ref(database);
+            get(child(dbref, "Users/"+ 1)).then((snapshot)=> {
+                if(snapshot.exists()) {
+                    alert(snapshot.val().name);
+                } else {
+                    alert("Не существует");
+                }
+            }).catch((error)=> {
+                alert("Не существует");
+            });
+        }
+        selectData();
+
+
+
+    </script> -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

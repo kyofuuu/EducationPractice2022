@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <script>
+        function preventBack() {
+            window.history.forward();
+        }
+    
+        setTimeout("preventBack()", 0);
+        window.onunload = function() {
+            null
+        };
+    </script>
+    <title>Аккаунт</title>
+</head>
+<body class="acc">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="https://spb.rt.ru/" class="header__icon">
+                        <img src="../img/icon.png" alt="" class="header__img">
+                    </a>
+                    
+
+                    <!-- <a href="newApplication.html" id="btnNewApplication" class="btnNewApplication">Оставить заявку</a> -->
+                </div>
+                <div class="header__userBlock">
+                    <div class="user__data" id="userData"></div>
+                    <button class="btnLogout" id="btnLogout">Выйти</button>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main__container main__acc main__white" id="main__container">
+                <div class="list__withBTN">
+                    <div class="list-app">
+                        <div class="list-app__title">Заявки</div>
+                        
+                        
+                    </div>
+                    <a href="newApplication.html" id="btnNewApplication" class="btnNewApplication">Оставить заявку</a>
+
+                </div>
+                
+
+                <div class="application">
+                    <div class="application__block">
+                        <div class="application__top">
+                            <div class="applicatin__id"></div>
+                            <div class="application__date"></div>
+                        </div>
+                        <div class="application__body">
+                            <div class="application__user">Клиент:</div>
+                            <div class="application__address">Адрес:</div>
+                            <div class="application__phone">Номер телефона:</div>
+                            <div class="application__description">Описание:</div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- <div class="plug">Заявок нет</div> -->
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <script type="module" src="../script.js"></script>
+</body>
+</html>
